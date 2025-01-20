@@ -1,0 +1,78 @@
+.quicksand-font{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* common styles */
+.d-flex{
+    display: flex;
+}
+.orange{
+    color: #FEA301;
+}
+.sky{
+    color: #01ACFD;
+}
+.water{
+    color: #05D4DF;
+}
+.vio{
+    color: #5D58EF;
+}
+/* nav style start */
+.navbar{
+    max-width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.logo-section{
+    align-items: center;
+}
+.logo-section>h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-item{
+    font-size: 1.20rem;
+    font-weight: 500;
+    list-style: none;
+    margin-right: 32px;
+}
+.nav-links{
+    text-decoration: none;
+}
+.nav-btn{
+    padding: 10px 60px;
+    background-color: #FEA301;
+    color: #ffffff;
+    font-size: 1.20rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+}
+.nav-slide{
+    display: none;
+}
+/* nav style end */
+
+@media screen and (max-width : 572px) {
+
+    /* nav responsive style */
+    .nav-item,
+    .nav-btn,
+    .logo-name{
+        display: none;
+    }
+
+    .nav-slide{
+        display: block;
+        font-size: 2rem;
+    }
+}
