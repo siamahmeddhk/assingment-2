@@ -100,7 +100,7 @@
 /* curriculum style start */
 .curriculum-main{
     max-width: 1440px;
-    background-image: url("/assets/bg.png"); 
+    background-image: url("../assets/bg.png"); 
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -170,13 +170,88 @@
 }
 
 /* curriculum style end */
+/* story style start */
+.story{
+    max-width: 1440px;
+    background-image: linear-gradient(360deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3)), url("../assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 100px;
+    gap: 20px;
+    margin: 0 auto;
+}
+.story-left-card{
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    background-color: #ffffff; 
+    overflow: hidden;  
+}
+.story-left-card-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 40px;
+}
+.left-card-btn{
+    padding: 15px 20px;
+    background-color: #3CD8E8;
+    color: #ffffff;
+    border-radius: 48px;
+    border: none;
+    margin-top: -25px;
+    margin-bottom: 40px;
+}
+.left-card-title{
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.left-card-dis{
+    color: #666666;
+}
+.story-right-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 21px;
+}
+.story-right-card{
+    width: 290px;
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: white;
+}
+.card-right-cont{
+    padding: 0px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.right-card-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.right-card-btn{
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 48px;
+    background-color: #01ACFD;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+/* story style end */
 @media screen and (max-width : 572px) {
 
     /* nav responsive style */
     .nav-item,
     .nav-btn,
     .logo-name,
-    .arrow-icons{
+    .arrow-icons,
+    .story-left-card{
         display: none;
     }
     .navbar{
@@ -217,5 +292,35 @@
     .curriculum-title{
         font-size: 1.8rem;
     }
+    .story{
+        justify-content: center;
+    }
+    .story-right-cards{
+        gap: 5px;
+    }
+    .story-right-card{
+        width: 190px;
+        height: 180px;
+    }
+    .story-right-card img{
+        width: 100%;
+    }
+    .right-card-btn{
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .right-card-title{
+        margin-top: -20px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
 
+@media screen and (min-width : 572px) and (max-width:992px){
+    .story{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
