@@ -114,6 +114,7 @@ marquee h4{
     background-image: url("../assets/bg.png"); 
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0 auto;
 }
 .curriculum{
     max-width: 1160px;
@@ -283,6 +284,7 @@ marquee h4{
 /* footer style start */
 footer{
     max-width: 1440px;
+    margin: 0 auto;
     height: 500px;
     background-color: #01ACFD;
     color: #ffffff;
@@ -322,7 +324,7 @@ footer{
 /* footer style start */
 
 
-@media screen and (max-width : 572px) {
+@media screen and (max-width : 576px) {
 
     .nav-item,
     .nav-btn,
@@ -443,7 +445,7 @@ footer{
     }
 }
 
-@media screen and (min-width : 572px) and (max-width:992px){
+@media screen and (min-width: 572px) and (max-width:992px){
     .card-container{
         display: flex;
         flex-direction: column;
